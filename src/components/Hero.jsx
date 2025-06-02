@@ -7,9 +7,10 @@ const Hero = () => {
         {/* Left Side 3D Image */}
         <div className="flex justify-center">
           <img
-            src="/hero_img.jpg"
+            src="/home.png"
             alt="Hero"
-            className="w-32 h-32 sm:w-48 sm:h-48 md:w-96 md:h-84 object-cover rounded-full bg-white shadow-lg shadow-blue-900/50 p-2"
+           className="w-[28rem] h-[28rem] object-cover rounded-full bg-white shadow-lg shadow-blue-900/50 p-3"
+
           />
         </div>
 
