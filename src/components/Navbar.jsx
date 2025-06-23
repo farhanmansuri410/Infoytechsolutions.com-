@@ -29,8 +29,9 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
               <img
-                src="/1.png"
+                src="/1.webp"
                 alt="Infoy Tech Solutions Logo"
+                loading="lazy"
                 className="h-10 w-auto sm:h-12 md:h-14 lg:h-16"
               />
             </div>

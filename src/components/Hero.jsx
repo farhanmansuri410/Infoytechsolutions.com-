@@ -7,8 +7,9 @@ const Hero = () => {
         {/* Left Side 3D Image */}
         <div className="flex justify-center">
           <img
-            src="/home.png"
+            src="/home.webp"
             alt="Hero"
+            loading="lazy"
            className="w-[28rem] h-[28rem] object-cover rounded-full bg-white shadow-lg shadow-blue-900/50 p-3"
 
           />
