@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,30 +29,32 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
-              <img
-                src="/1.webp"
-                alt="Infoy Tech Solutions Logo"
-                loading="lazy"
-                className="h-10 w-auto sm:h-12 md:h-14 lg:h-16"
-              />
+              <Link to="/">
+                <img
+                  src="/1.webp"
+                  alt="Infoy Tech Solutions Logo"
+                  loading="lazy"
+                  className="h-10 w-auto sm:h-12 md:h-14 lg:h-16"
+                />
+              </Link>
             </div>
 
             <div className="hidden md:flex space-x-8 text-gray-800 font-medium">
-              <a href="#services" className="hover:text-blue-600">
-                Our Service
-              </a>
-              <a href="#portfolio" className="hover:text-blue-600">
-                Portfolio
-              </a>
-              <a href="#about" className="hover:text-blue-600">
-                About Us
-              </a>
-              <a href="#contact" className="hover:text-blue-600">
-                Contact Us
-              </a>
-              <a href="#technologies" className="hover:text-blue-600">
+              <Link to="/services" className="hover:text-blue-600">
+                Our Services
+              </Link>
+              <Link to="/technologies" className="hover:text-blue-600">
                 Technologies
-              </a>
+              </Link>
+              <Link to="/portfolio" className="hover:text-blue-600">
+                Portfolio
+              </Link>
+              <Link to="/about" className="hover:text-blue-600">
+                About Us
+              </Link>
+              <Link to="/contact" className="hover:text-blue-600">
+                Contact Us
+              </Link>
             </div>
             <div className="md:hidden flex items-center">
               <button onClick={toggleMenu}>
@@ -68,36 +71,36 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden bg-white px-4 pt-2 pb-4 space-y-2 shadow-lg">
-            <a
-              href="#services"
+            <Link
+              to="/services"
               className="block text-gray-700 hover:text-blue-600"
             >
               Our Service
-            </a>
-            <a
-              href="#portfolio"
+            </Link>
+            <Link
+              to="/portfolio"
               className="block text-gray-700 hover:text-blue-600"
             >
               Portfolio
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              to="/about"
               className="block text-gray-700 hover:text-blue-600"
             >
               About Us
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="/contact"
               className="block text-gray-700 hover:text-blue-600"
             >
               Contact Us
-            </a>
-            <a
-              href="#technologies"
+            </Link>
+            <Link
+              to="/technologies"
               className="block text-gray-700 hover:text-blue-600"
             >
-              Technologys
-            </a>
+              Technologies
+            </Link>
           </div>
         )}
       </nav>

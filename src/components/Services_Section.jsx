@@ -41,7 +41,7 @@ const services = [
   },
 ];
 
-const Services = () => {
+const Services_Section = () => {
   const [isVisible, setIsVisible] = useState(Array(services.length).fill(false));
   const itemRefs = useRef([]);
 
@@ -119,4 +119,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Services_Section;

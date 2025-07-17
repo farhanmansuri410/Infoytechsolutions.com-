@@ -86,7 +86,7 @@ const technologies = [
   },
 ];
 
-const Technologies = () => {
+const Techno_Section = () => {
   return (
     <section className="bg-white py-20" id="technologies">
       <div className="max-w-7xl mx-auto px-4 text-center">
@@ -109,4 +109,4 @@ const Technologies = () => {
   );
 };
 
-export default Technologies;
+export default Techno_Section;
