@@ -9,6 +9,10 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const handleLinkClick = () => {
+    setIsOpen(false); // close the menu
+    window.scrollTo({ top: 0, behavior: "smooth" }); // scroll to top smoothly
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,33 +77,38 @@ const Navbar = () => {
           <div className="md:hidden bg-white px-4 pt-2 pb-4 space-y-2 shadow-lg">
             <Link
               to="/services"
+              onClick={handleLinkClick}
               className="block text-gray-700 hover:text-blue-600"
             >
               Our Service
             </Link>
             <Link
+              to="/technologies"
+              onClick={handleLinkClick}
+              className="block text-gray-700 hover:text-blue-600"
+            >
+              Technologies
+            </Link>
+            <Link
               to="/portfolio"
+              onClick={handleLinkClick}
               className="block text-gray-700 hover:text-blue-600"
             >
               Portfolio
             </Link>
             <Link
               to="/about"
+              onClick={handleLinkClick}
               className="block text-gray-700 hover:text-blue-600"
             >
               About Us
             </Link>
             <Link
               to="/contact"
+              onClick={handleLinkClick}
               className="block text-gray-700 hover:text-blue-600"
             >
               Contact Us
-            </Link>
-            <Link
-              to="/technologies"
-              className="block text-gray-700 hover:text-blue-600"
-            >
-              Technologies
             </Link>
           </div>
         )}
