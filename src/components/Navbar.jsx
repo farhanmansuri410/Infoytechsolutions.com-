@@ -44,22 +44,43 @@ const Navbar = () => {
             </div>
 
             <div className="hidden md:flex space-x-8 text-gray-800 font-medium">
-              <Link to="/services" className="hover:text-blue-600">
+              <Link
+                to="/services"
+                onClick={handleLinkClick}
+                className="hover:text-blue-600"
+              >
                 Our Services
               </Link>
-              <Link to="/technologies" className="hover:text-blue-600">
+              <Link
+                to="/technologies"
+                onClick={handleLinkClick}
+                className="hover:text-blue-600"
+              >
                 Technologies
               </Link>
-              <Link to="/portfolio" className="hover:text-blue-600">
+              <Link
+                to="/portfolio"
+                onClick={handleLinkClick}
+                className="hover:text-blue-600"
+              >
                 Portfolio
               </Link>
-              <Link to="/about" className="hover:text-blue-600">
+              <Link
+                to="/about"
+                onClick={handleLinkClick}
+                className="hover:text-blue-600"
+              >
                 About Us
               </Link>
-              <Link to="/contact" className="hover:text-blue-600">
+              <Link
+                to="/contact"
+                onClick={handleLinkClick}
+                className="hover:text-blue-600"
+              >
                 Contact Us
               </Link>
             </div>
+
             <div className="md:hidden flex items-center">
               <button onClick={toggleMenu}>
                 {isOpen ? (
